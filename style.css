@@ -1,0 +1,315 @@
+body,
+html {
+  overflow-x: hidden;
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+* {
+  list-style: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (min-width:1200px) {
+  .sidesSpace{
+margin-left: 25px;
+margin-right: 25px;
+  }
+}
+
+.sticky-navbar {
+  margin-bottom: -200px;
+  height: fit-content;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  /* padding: -25px; */
+  /* padding-top: 10px; */
+  z-index: 50;
+  background-color: white;
+  box-shadow: 2px 4px 8px grey;
+}
+
+.logoimg {
+  width: 200px;
+}
+@media (max-width: 725px) {
+  .logoimg {
+    width: 150px;
+  }
+  .marginButton{
+    margin-bottom: 90px;
+  }
+
+}
+
+.hidden {
+  display: none;
+}
+
+.position {
+  position: fixed;
+  z-index: 10;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #fafafa;
+  bottom: 0;
+  width: 100%;
+}
+.scroller {
+  overflow-y: scroll;
+  height: 200px;
+}
+
+
+
+
+.tab-content {
+  display: none;
+  background-color: #fafafa;
+}
+
+.tab-content.active {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+.circlefirst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* left: 11%; */
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 50%;
+  border: 1px solid;
+  background-color: black !important;
+}
+
+.half-circle {
+  /* position: absolute; */
+  width: 65px;
+  height: 65px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: 1px solid;
+  background-color: white;
+  /* left: 10%; */
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.fixedBottomP {
+  font-size: 13px;
+}
+.paragraph {
+  font-size: 16px;
+  font-weight: 600;
+}
+.paragraphAmount {
+  font-size: 14px;
+  font-weight: 600;
+}
+/* .eleventhCardH {
+  height:;
+}
+.ninthCardH{
+  height:;
+  margin-bottom: 10px;
+} */
+
+.form-control {
+  border: none;
+  outline: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: #eef0f2;
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: #eef0f2 !important;
+}
+
+.dropdown:hover {
+  background-color: #eef0f2;
+}
+.padd {
+  padding: 5px;
+}
+
+.bgoflist {
+  background-color: hsl(0, 100%, 50%, 0.1);
+}
+
+.btn-link {
+  text-decoration: none !important;
+}
+
+.nav-p {
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+.third-bg {
+  background-color: #f5f7f9;
+}
+.posi {
+  width: 180px;
+  position: absolute;
+  left: -180px;
+  top: 0px;
+}
+
+.material {
+  display: none; /* Initially hide the icon */
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  left: -60px; /* Initial position off-screen to the left */
+  background-color: black; /* Background color */
+  color: white; /* Icon color */
+  padding: 4px;
+  width: 65px;
+  border-radius: 15px;
+}
+
+.cards {
+  position: relative; /* Required to position the icon absolutely inside the card */
+  overflow: hidden; /* Hide overflow to ensure icon doesn't appear outside */
+  /* height: 400px; */
+}
+
+@keyframes slideIn {
+  from {
+    left: -60px; /* Starting position off-screen to the left */
+  }
+  to {
+    left: -10px; /* End position at 10px from the left */
+  }
+}
+
+.cards:hover .material {
+  display: flex;
+  justify-content: end; /* Show the icon on hover */
+  animation: slideIn 0.5s ease-in-out forwards; /* Apply the animation */
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  background-color: #f0f0f0; /* Background color of the circle */
+}
+.circle svg {
+  width: 50px; /* Size of the SVG */
+  height: 50px; /* Size of the SVG */
+}
+
+.border-right {
+  border-right: 4px solid;
+  padding-right: 5px;
+}
+.card {
+  border: none;
+  border-radius: 13px;
+}
+
+.hide {
+  display: none;
+  background-color: #eef0f2;
+}
+
+/* parallex effect work */
+.containers {
+  color: var(--color);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/parallex1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.second {
+  background-image: url(images/parallex1.jpg);
+  background-attachment: fixed;
+  height: 1400px;
+}
+
+@media (max-width: 725px) {
+  .second {
+    background-image: url(images/parallex1.jpg);
+    background-attachment: fixed;
+    height: 1800px;
+  }
+}
+
+.second {
+  flex-direction: row;
+  gap: 1.6em;
+}
+
+/* CART CSS */
+.quantity-circle {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red; /* Change color as needed */
+  color: white;
+  border-radius: 100%;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.full-width-input {
+  width: 100%;
+}
+.full-width-input::placeholder {
+  float: left;
+  color: #c2bdbd;
+}
+
